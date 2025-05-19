@@ -38,6 +38,7 @@ import net.minecraft.client.resources.IResourcePack;
 import net.minecraft.client.resources.LanguageManager;
 import net.minecraft.util.ResourceLocation;
 
+import com.falsepattern.lib.util.MathUtil;
 import lombok.val;
 import org.lwjglx.LWJGLException;
 import org.lwjglx.opengl.Display;
@@ -696,9 +697,13 @@ public class MinecraftDisplayer implements IDisplayer {
                     if (LoadingConfig.Fixed.blendTimeMillis < 1.f) {
                         blendAlpha = 0.f;
                     } else {
-                        blendAlpha = Float.max(
+                        float newAlpha = Float.max(
                                 0.f,
                                 1.0f - (float) (System.currentTimeMillis() - blendStartMillis) / LoadingConfig.Fixed.blendTimeMillis);
+
+                        newAlpha = MathUtil.cos(newAlpha * (float)Math.PI) / -2.0f + 0.5f;
+                        newAlpha = newAlpha * newAlpha * (3.0f - 2.0f * newAlpha);
+                        blendAlpha = newAlpha;
                     }
                     if (blendAlpha <= 0.f) {
                         blending = false;

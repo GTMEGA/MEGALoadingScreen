@@ -33,7 +33,9 @@ import cpw.mods.fml.relauncher.SideOnly;
         version = Tags.MOD_VERSION,
         name = Tags.MOD_NAME,
         acceptedMinecraftVersions = "[1.7.10]",
-        acceptableRemoteVersions = "*")
+        acceptableRemoteVersions = "*",
+        dependencies = "required-after:falsepatternlib@[1.6.0,);"
+        )
 public class BetterLoadingScreen {
 
     @Instance(Tags.MOD_ID)
