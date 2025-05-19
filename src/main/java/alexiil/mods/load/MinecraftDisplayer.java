@@ -504,14 +504,14 @@ public class MinecraftDisplayer implements IDisplayer {
             // Static NORMAL bar image
             images.add(new ImageRender(
                     LoadingConfig.Fixed.progress,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.STATIC,
                     new Area(LoadingConfig.Fixed.progressPos[0], LoadingConfig.Fixed.progressPos[1], LoadingConfig.Fixed.progressPos[2], LoadingConfig.Fixed.progressPos[3]),
                     new Area(LoadingConfig.Fixed.progressPos[4], LoadingConfig.Fixed.progressPos[5], LoadingConfig.Fixed.progressPos[6], LoadingConfig.Fixed.progressPos[7])));
             // Dynamic NORMAL bar image (yellow thing)
             images.add(new ImageRender(
                     LoadingConfig.Fixed.progress,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.DYNAMIC_PERCENTAGE,
                     new Area(
                             LoadingConfig.Fixed.progressPosAnimated[0],
@@ -526,14 +526,14 @@ public class MinecraftDisplayer implements IDisplayer {
             // Static GT bar image
             images.add(new ImageRender(
                     LoadingConfig.Fixed.GTprogress,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.STATIC,
                     new Area(LoadingConfig.Fixed.GTprogressPos[0], LoadingConfig.Fixed.GTprogressPos[1], LoadingConfig.Fixed.GTprogressPos[2], LoadingConfig.Fixed.GTprogressPos[3]),
                     new Area(LoadingConfig.Fixed.GTprogressPos[4], LoadingConfig.Fixed.GTprogressPos[5], LoadingConfig.Fixed.GTprogressPos[6], LoadingConfig.Fixed.GTprogressPos[7])));
             // Dynamic GT bar image (yellow thing)
             images.add(new ImageRender(
                     LoadingConfig.Fixed.GTprogressAnimated,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.DYNAMIC_PERCENTAGE,
                     new Area(
                             LoadingConfig.Fixed.GTprogressPosAnimated[0],
@@ -565,14 +565,14 @@ public class MinecraftDisplayer implements IDisplayer {
             // Static NORMAL bar image
             images.add(new ImageRender(
                     LoadingConfig.Fixed.progress,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.STATIC,
                     new Area(LoadingConfig.Fixed.progressPos[0], LoadingConfig.Fixed.progressPos[1], LoadingConfig.Fixed.progressPos[2], LoadingConfig.Fixed.progressPos[3]),
                     new Area(LoadingConfig.Fixed.progressPos[4], LoadingConfig.Fixed.progressPos[5], LoadingConfig.Fixed.progressPos[6], LoadingConfig.Fixed.progressPos[7])));
             // Dynamic NORMAL bar image (yellow thing)
             images.add(new ImageRender(
                     LoadingConfig.Fixed.progressAnimated,
-                    EPosition.CENTER,
+                    EPosition.BOTTOM_CENTER,
                     EType.DYNAMIC_PERCENTAGE,
                     new Area(
                             LoadingConfig.Fixed.progressPosAnimated[0],

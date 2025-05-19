@@ -43,10 +43,10 @@ public class LoadingConfig {
          * private int[] GTprogressPos = new int[] {0, 0, 172, 12, 0, -83, 172, 6}; private int[] GTprogressPosAnimated =
          * new int[] {0, 12, 172, 12, 0, -83, 172, 6};
          */
-        static final int[] GTprogressPos = new int[] { 0, 0, 256, 64, 0, -118, 480, 6 };
-        static final int[] GTprogressPosAnimated = new int[] {0, 128, 256, 64, 0, -118, 480, 6 };
-        static final int[] progressPos = new int[] {0, 0, 256, 64, 0, -118, 440, 6 };
-        static final int[] progressPosAnimated = new int[] {0, 128, 256, 64, 0, -118, 440, 6 };
+        static final int[] GTprogressPos = new int[] { 0, 0, 256, 64, 0, 0, 0, 6 };
+        static final int[] GTprogressPosAnimated = new int[] {0, 128, 256, 64, 0, 0, 0, 6 };
+        static final int[] progressPos = new int[] {0, 0, 256, 64, 0, 0, 0, 6 };
+        static final int[] progressPosAnimated = new int[] {0, 128, 256, 64, 0, 0, 0, 6 };
         static final int[] tipsTextPos = new int[] {0, 10 };
         static final String baseTipsTextPos = "BOTTOM_CENTER";
         static final boolean tipsEnabled = true;
